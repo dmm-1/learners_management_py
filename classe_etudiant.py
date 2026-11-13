@@ -2,6 +2,7 @@
 
 # Importing necessary classes
 from classe_personne import Personne        # classe_personne.py is the module
+from functools import reduce
 
 # Class to "create" students (inherits from Personne)
 class Etudiant(Personne):
@@ -64,7 +65,13 @@ class Etudiant(Personne):
         # if there's one or more mark:
         else:
             average_grade = float((sum(self.student_grades)) / len(self.student_grades))
+
+            # reduce(self.student_grades, lambda grades_sum, grades_size)
+
             return average_grade
+
+
+
 
 
 # Test du code:
