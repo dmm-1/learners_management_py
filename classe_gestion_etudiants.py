@@ -1,4 +1,3 @@
-
 # ---------------   ---------------    ---------------     ---------------
 
 # Importing necessary package
@@ -42,6 +41,20 @@ class GestionEtudiants:
         """
 
         for students in self.liste_etudiants:
-            print(f"{students.student_id}\t {students.the_name}\t {students.the_age}\t{students.student_field}", end="\n-----------------------------")
+            print(f"{students.student_id}\t {students.the_name}\t {students.the_age}\t{students.student_field}",)
 
         print("Pour voir les notes d\'un étudiant, sélectionnez [Rechercher un étudiant], et renseignez son matricule")
+
+
+# Tests bloc
+
+# Creating new school:
+
+Limamoulaye = GestionEtudiants()
+
+# Adding a new Student into this school
+Limamoulaye.ajouter_etudiant("Jean Duverne", "Maintenance des Infrastures Critiques", 22, [15, 18.5, 17, 19])
+Limamoulaye.ajouter_etudiant("Patrick Germaint", "Analyses Financières", 26, [12, 16.65])
+
+# Displaying all Students of this School:
+Limamoulaye.afficher_etudiants()
