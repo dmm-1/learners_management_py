@@ -27,4 +27,4 @@ class GestionEtudiants:
         """
 
         self.liste_etudiants.append(Etudiant(name, age, field, matricule=self.id_counter, notes=notes))
-        self.id_counter += 1        
+        self.id_counter += 1          
